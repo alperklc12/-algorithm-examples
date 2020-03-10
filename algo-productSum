@@ -1,0 +1,16 @@
+lst1 = [1, 2]  # (1 + 2)
+lst2 = [2, [3, 4]]  # (2 + 2 * (3 + 4))
+lst3 = [5, 2, [7, -1], 3, [6, [-13, 8], 4]]  # (5 + 2 + 2*(7 - 1) + 3 + 2*(6 + 3*(-13 + 8) + 4))
+
+
+def productSum(array, multipler=1):
+    sum_ = 0
+    for item in array:
+        if isinstance(item, list):
+            sum_ += productSum(item, multipler + 1)
+        else:
+            sum_ += item
+    return sum_ * multipler
+
+
+print(productSum(lst2))
