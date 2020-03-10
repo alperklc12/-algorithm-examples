@@ -1,0 +1,47 @@
+def binarySearch(array: list, target: int):
+    left = 0
+    right = len(array)
+
+    while left <= right:
+        mid = (left + right) // 2
+        if target == array[mid]:
+            return array.index(array[mid])
+        if target < array[mid]:
+            right = mid - 1
+        else:
+            left = mid + 1
+	else:
+		return -1
+
+
+def binarySearch(array: list, target: int):
+    left = 0
+    right = len(array)
+
+    while left <= right:
+        mid = (left + right) // 2
+        if target == array[mid]:
+            return array.index(array[mid])
+        if target < array[mid]:
+            right = mid - 1
+        else:
+            left = mid + 1
+	else:
+		return -1
+    
+
+
+def binarySearch(array: list, target: int):
+    left = 0
+    right = len(array)
+
+    while left <= right:
+        mid = (left + right) // 2
+        if target == array[mid]:
+            return array.index(array[mid])
+        if target < array[mid]:
+            right = mid - 1
+        else:
+            left = mid + 1
+	else:
+		return -1
